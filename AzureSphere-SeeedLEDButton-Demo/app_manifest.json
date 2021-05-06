@@ -1,0 +1,11 @@
+{
+  "SchemaVersion": 1,
+  "Name": "AzureSphere-SeeedLEDButton-Demo",
+  "ComponentId": "2e5cc64a-40ab-427f-975b-6e67a1a16fe7",
+  "EntryPoint": "/bin/app",
+  "CmdArgs": [],
+  "Capabilities": {
+    "AllowedApplicationConnections": []
+  },
+  "ApplicationType": "Default"
+}

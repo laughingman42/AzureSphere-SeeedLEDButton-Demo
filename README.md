@@ -5,8 +5,8 @@ This project provides the base template to drive a [Seeed LED Button](https://ww
 
 ## Installation
 * Hardware
-	* Once you have assembled the Mini Dev Board with the Grove Breakout, connect the LED to the D0 breakout. 
-
+	* Once you have assembled the Mini Dev Board with the Grove Breakout, connect the LED to the D0 breakout. D0 maps to GPIO6 and GPIO30.
+![connection image](media/SeeedLEDButtonConnected.jpg)
 
 * Software
 	* Follow instructions provided in the [prerequisites section for Build a high-level application](https://docs.microsoft.com/en-us/azure-sphere/install/qs-blink-application?tabs=windows%2Ccliv2beta&pivots=visual-studio#prerequisites) to ensure your Mini Dev Board is ready for development. 

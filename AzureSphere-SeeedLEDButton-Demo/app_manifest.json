@@ -5,7 +5,8 @@
   "EntryPoint": "/bin/app",
   "CmdArgs": [],
   "Capabilities": {
-    "AllowedApplicationConnections": []
+    "AllowedApplicationConnections": [],
+    "Gpio": [ "$SEEED_MT3620_MDB_J1_PIN9_GPIO30", "$SEEED_MT3620_MDB_J1_PIN3_GPIO6" ]
   },
   "ApplicationType": "Default"
 }

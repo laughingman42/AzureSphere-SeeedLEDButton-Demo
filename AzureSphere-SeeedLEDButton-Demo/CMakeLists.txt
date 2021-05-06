@@ -8,8 +8,12 @@ project (AzureSphere-SeeedLEDButton-Demo C)
 azsphere_configure_tools(TOOLS_REVISION "21.04")
 azsphere_configure_api(TARGET_API_SET "9")
 
+add_subdirectory(hwlibs/MT3620_Grove_Shield_Library)
+
 # Create executable
 add_executable (${PROJECT_NAME} main.c)
-target_link_libraries (${PROJECT_NAME} applibs pthread gcc_s c)
+target_link_libraries (${PROJECT_NAME} applibs pthread gcc_s c MT3620_Grove_Shield_Library)
+
+azsphere_target_hardware_definition(${PROJECT_NAME} TARGET_DEFINITION "seeed_mt3620_mdb.json")
 
 azsphere_target_add_image_package(${PROJECT_NAME})

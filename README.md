@@ -11,7 +11,11 @@ This project provides the base template to drive a [Seeed LED Button](https://ww
 * Software
 	* Follow instructions provided in the [prerequisites section for Build a high-level application](https://docs.microsoft.com/en-us/azure-sphere/install/qs-blink-application?tabs=windows%2Ccliv2beta&pivots=visual-studio#prerequisites) to ensure your Mini Dev Board is ready for development. 
 	* Clone this project or else follow the next steps from the link above while referring to the code in this project. This project uses the AzureSphere HLCore Blank template in Visual Studio. 
-  * This project was built using Azure Sphere SDK v21.04. If you have issues with Hardware Definitions, ensure your SDK contains references for the Mini Dev Board (seeed_mt3620_mdb.json)
+  * This project was built using Azure Sphere SDK v21.04. If you have issues with Hardware Definitions, ensure your SDK contains references for the Mini Dev Board (seeed_mt3620_mdb.json). This file can usually be found at "C:\Program Files (x86)\Microsoft Azure Sphere SDK\HardwareDefinitions" or the Linux equivalent folder. The following code in CmakeLists.txt instructs it to include the Hardware Definition file.
+  	```c
+	azsphere_target_hardware_definition(${PROJECT_NAME} TARGET_DEFINITION "seeed_mt3620_mdb.json")
+	```
+
 
 ## Code References
 This project borrows code from the following repositories
